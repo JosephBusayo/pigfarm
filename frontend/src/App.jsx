@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
+import axios from 'axios';
+import { feedURL, swineURL } from './utils/constants'
 import './styles/App.css'
 
 import { Dashboard } from './components/Dashboard'
@@ -10,18 +12,28 @@ import { Sidebar } from './components/Sidebar'
 
 
 function App() {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    axios.get(`${swineURL}`).then((response) => {
+      setData(response.data.payload)
+    })
+  }, [])
+  const { swines, feeds } = data
 
   return (
-    <>
-    <Sidebar />
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/swine" element={<Swine />} />
-        <Route path="/feeding" element={<Feeding />} />
-        <Route path="/sales" element={<Sales />} />
-      </Routes>
+    <section className="App">
+      <Sidebar />
 
-    </>
+      <div className="main">
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard swine_data={swines} feed_data={feeds} />} />
+          <Route path="/swine" element={<Swine />} />
+          <Route path="/feeding" element={<Feeding swine_data={swines} feed_data={feeds} />} />
+          <Route path="/sales" element={<Sales />} />
+        </Routes>
+      </div>
+    </section>
   )
 }
 

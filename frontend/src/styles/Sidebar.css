@@ -1,0 +1,57 @@
+.sidebar{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+.logo{
+    width: 48px;
+    height: 48px;
+}
+
+.james{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF6234;
+    margin-top: -10px;
+}
+
+.nav_menu{
+    display : flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.link{
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #FF6234;
+}
+.btn:active, .btn:focus{
+    background: #FFEEE2;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+} 
+.btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background: transparent;
+    color: #FF6234;
+    padding: 7px;
+}
