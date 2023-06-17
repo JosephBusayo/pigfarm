@@ -61,7 +61,7 @@ export function Feeding({ swine_data, feed_data }) {
                             <tbody>
                                 {feed_data !== undefined &&
                                     feed_data.map((feed) => (
-                                        <tr key={feed.id}>
+                                        <tr key={feed._id}>
                                             <td>{feed.name}</td>
                                             <td>{feed.type}</td>
                                             <td>{feed.size}</td>
