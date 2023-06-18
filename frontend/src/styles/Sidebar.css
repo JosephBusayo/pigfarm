@@ -55,3 +55,31 @@
     color: #FF6234;
     padding: 7px;
 }
+
+
+
+@media screen and (max-width: 750px){
+    .sidebar{
+        padding: 10px 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    .profile-wrapper{
+        display: none;
+    }
+    
+    .nav_menu{
+        display : flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .btn{
+        display: none;
+    }
+}

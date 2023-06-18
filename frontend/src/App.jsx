@@ -20,16 +20,29 @@ function App() {
     })
   }, [])
   const { swines, feeds } = data
+  
+  let total_corn = 0
+  let total_grain = 0
 
+  if (feeds !== undefined) {
+    feeds.forEach((item) => {
+      if (item.type.toLowerCase() === "corn based") {
+        total_corn += item.size
+      } else {
+        total_grain += item.size
+      }
+
+    })
+  }
   return (
     <section className="App">
       <Sidebar />
 
       <div className="main">
         <Routes>
-          <Route path="/dashboard" element={<Dashboard swine_data={swines} feed_data={feeds} />} />
+          <Route path="/dashboard" element={<Dashboard swine_data={swines} total_corn={total_corn} total_grain={total_grain} />} />
           <Route path="/swine" element={<Swine />} />
-          <Route path="/feeding" element={<Feeding swine_data={swines} feed_data={feeds} />} />
+          <Route path="/feeding" element={<Feeding total_corn={total_corn} total_grain={total_grain} feed_data={feeds}/>} />
           <Route path="/sales" element={<Sales />} />
         </Routes>
       </div>

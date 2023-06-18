@@ -27,7 +27,6 @@ router.post('/add-swine', async (req, res) => {
         const savedSwine = await swine.save()
         res.send({
             message : 'Saved successfully',
-            payload: savedSwine,
             status_code : 201
         })
     }catch(err){

@@ -1,0 +1,126 @@
+.dashboard-pig{
+    width: 200px
+}
+.dashb-info{
+    width: 480px;
+height: 265px;
+
+
+background: #FF7349;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 49px;
+}
+.details{
+    color: white;
+    text-align: center;
+}
+.pig-count{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.pig-info1{
+    font-weight: 900;
+    font-size: 126px;
+    line-height: 148px;
+}
+.pig-info2{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+}
+.gender-info1{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+}
+.dashboard-info{
+    text-align: center;
+}
+.sale-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 240px;
+    background: #E7A55C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 49px;
+}
+.sale-info1{
+    font-weight: 900;
+    font-size: 126px;
+    line-height: 148px;
+    color: #FFEEE2;
+}
+.sale-info2{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFEEE2;
+}
+
+
+@media screen and (max-width: 750px){
+    .dashboard-pig{
+        width: 50px
+    }
+    .dashb-info{
+        width: 180px;
+        height: 120px;
+        border-radius: 12px;
+    }
+    .pig-count{
+        display: flex;
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+    .pig-info1{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 28px;
+    }
+    .pig-info2{
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 12px;
+    }
+    .gender-count{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px
+    }
+    .gender-info1{
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .dashboard-info{
+        text-align: center;
+    }
+
+
+
+
+    .sale-detail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 150px;
+        border-radius: 15px;
+    }
+    .sale-info1{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 28px;
+    }
+    .sale-info2{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

@@ -20,7 +20,19 @@ input:focus, input:hover{
 form{
     margin: 0 auto;
 }
-
+.header-text{
+    color:white;
+}
+.swine-btn{
+    border-radius: 7px;
+    padding: 8px;
+    text-align: center;
+    width: 30%;
+    background-color: #FFEEE2;
+    color: #FF6234;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .swine-page{
     background: #FF8C54;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -39,4 +51,30 @@ form{
     align-items: center;
     flex-direction: column;
     gap: 40px
+}
+
+
+@media screen and (max-width: 750px){
+    .swine-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 40px
+    }
+    .swine-page{
+        border-radius: 15px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    input{
+        border-radius: 8px;
+        width: 200px;
+        margin: 0 10px;
+        padding: 6px 6px;
+        font-size: 18px;
+        line-height: 15px;    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }

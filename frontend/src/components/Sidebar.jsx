@@ -10,7 +10,7 @@ export function Sidebar() {
                     <img src="/assets/logo_white.png" alt="logo" className="logo" />
                 </div>
 
-                <div>
+                <div className="profile-wrapper">
                     <div className="profile-container">
                         <img src="/assets/james.png" alt="profile" className="profile" />
                     </div>
